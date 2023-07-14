@@ -1,0 +1,122 @@
+/* To darken the background */
+#title
+{
+    background:rgba(0,0,0,0.6)url("images/background.jpeg");
+    background-size: cover;
+    background-blend-mode: darken;
+    
+} 
+.logoimg{
+  scale: 1.2;
+}  
+
+.nav-item{
+    padding: 0 30px;
+    color:white;
+    font-size:1.2rem ;
+    font-weight: bold;
+}
+
+.brand
+{
+    padding-left: 12%;
+}
+.logo
+{
+    padding-top:5%;
+    padding-left: 3.5%;
+}
+.Output{
+  background-color: lightblue;
+  font-weight: bold;
+  
+}
+.heading
+{
+    font-family: "Ubuntu";
+    font-size:2.5rem ;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+.search-box{
+  width: 30vw;
+  height: 60px;
+  background-color: white;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+  outline: none;
+  font-weight: bold;
+  font-size:18px ;
+  margin-bottom: 90px;
+}
+
+.search-btn{
+  width: 130px;
+  background-color: red;
+  color:white;
+  border: none;
+  border-top-right-radius:20px ;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 90px;
+}
+
+#second-section
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card
+{
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #CCC;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  margin-bottom: 10px;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 10px #000;
+  cursor: pointer;
+}
+
+.card-bottom{
+  position: absolute;
+  background-color: white;
+  height: 50px;
+  width:100%;
+  margin-top: 150px;
+}
+
+#popular-location{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.popular-heading{
+  font-size: 40px;
+  color: black;
+}
+
+.locations-div{
+  width:100%;
+  height:60px;
+  padding-left: 20px;
+  background-color:white;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.locations-div:hover{
+  box-shadow: 1px 1px 5px #CCC;
+}
