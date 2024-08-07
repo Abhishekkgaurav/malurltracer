@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This website is develop for identify the safety of url.">
+  <meta name="keywords" content="phishing url,phishing,cyber security,machine learning,classifier,python">
+  <meta name="author" content="MalURLTracer team">
+  <title>MalUrlTracer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="static/styles.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Favicons -->
+<link href="static/image/favicon.png" rel="icon">
+<link href="static/image/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+
+
+</head>
+
+<body>
+
+    
+<section id="title">
+   <div class="container-fluid">
+    <!-- Nav Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        
+        <li class="nav-item">
+        <a href="#Blogs" style="text-decoration: none; color: aliceblue;">Blogs </a>
+        </li>
+        <li class="nav-item">
+            <a href="#About_Us" style="text-decoration: none; color: aliceblue;"> About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#ContactUs" style="text-decoration: none; color: aliceblue;"> Contact Us</a>
+        </li>
+      </ul>
+    </div>
+   </nav>
+   <!-- Header Section -->
+   <div class="row">
+    <div class="col-lg-3">
+
+    </div>
+    <div class="col-lg-6 logo">
+        <a class="brand"><img src="static/images/logo2maltracer.png" alt="MalUrlTracer" class="logoimg"></a>
+    </div>
+    <div class="col-lg-3">
+        
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-lg-12 heading">
+        Discover the Malicious & Benign Websites
+   </div>
+   </div>
+   <!-- changes done here
+   -->
+   </div>
+  </section>
+  <div class=" container">
+    <div class="row">
+        <div class="form col-md" id="form1" style="background: url(https://governmenttechnologyinsider.com/wp-content/uploads/2020/11/shutterstock_1202221816.jpg);">
+          <form method="post" action="/">
+                <input type="text" class="form__input" name ='url' id="url" placeholder="Enter URL" required="" />
+                
+                <button class="button" role="button" >Check here</button>
+            </form>
+           
+    </div>
+    
+    <div class="col-md" id="form2" style="background: url(https://governmenttechnologyinsider.com/wp-content/uploads/2020/11/shutterstock_1202221816.jpg);">
+        
+        <br>
+        <h6 class = "right " ><a href= {{ url }} target="_blank">{{ url }}</a></h6>
+           
+        <br>
+        <h3 id="prediction"></h3>
+        <button class="button2"  id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
+        <button class="button1" id="button1" role="button"  onclick="window.open('{{url}}')" target="_blank">Continue</button>
+    </div> 
+</div>
+</div>
+
+<section id="Blogs">
+<!-- @zone - hightlighted -->
+<!--Showshow-->
+<div class="container slider-container" style="margin-top: 30px;">
+  <div class="">
+    <h2>Blogs</h2>
+  </div>
+  <div class="row">
+     <div class="col-md-12 slider-left">
+        <section class="flexslider-wrapper">
+           <div id="main-slider" class="flexslider" data-transition="fade" data-page-class="slider-full-width">
+              <div class="slides">
+                 <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://www.sikich.com/wp-content/uploads/2023/03/maliciouswebsites.jpg">
+                    <div class="slide-caption">
+                       <div class="row">
+                          <div class="col-md-12">
+                             <div class="slide-text">
+                                <div class="slide-title">Watering Hole Attacks on NGOs</div>
+                                In 2014, a group of Chinese hackers compromised the website of the US-based Veterans of Foreign Wars (VFW) and used it to deliver malware to site visitors. This tactic, known as a "watering hole" attack, targeted individuals who were likely to visit the VFW website, such as veterans and government employees.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://cwatch.comodo.com/blog/wp-content/uploads/2020/05/malicious-website-infection.png">
+                    <div class="slide-caption">
+                       <div class="row">
+                          <div class="col-md-12">
+                             <div class="slide-text">
+                                <div class="slide-title">Phishing Campaigns Impersonating Banks</div>
+                                Malicious websites often impersonate banks and financial institutions. In 2020, a phishing campaign targeted users of a major UK bank, convincing them to enter their credentials on a fake login page, leading to unauthorized access to their accounts.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://itsecuritywire.com/wp-content/uploads/2020/07/Expired-Domains-Leading-Users-to-Malicious-Websites-1024x576.jpg">
+                    <div class="slide-caption">
+                       <div class="row">
+                          <div class="col-md-12">
+                             <div class="slide-text">
+                                <div class="slide-title">Fake Cryptocurrency Exchange</div>
+                                In 2018, a fake cryptocurrency exchange called "mybtgwallet" stole over $3 million worth of Bitcoin Gold from users. The website appeared legitimate but was designed to steal users' private keys.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+        </section>
+        </div>
+     </div>
+  </div>
+</div>
+</section>
+
+
+<section id="About_Us">
+ <!-- ======= About Us Section ======= -->
+ <section id="about" class="about" style="margin-top: 40px;">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p>Welcome to MalURLTracer™, your trusted resource for detecting and safeguarding against malicious websites. Our dedicated team of cybersecurity experts is committed to providing you with the tools and knowledge you need to navigate the digital landscape safely and confidently.</p>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <h3>Scan Malicious URLs</h3>
+          <img src="https://images.hdqwalls.com/download/hacker-wide-1024x768.jpg" class="img-fluid rounded-4 mb-4" alt="">
+          <p>Introducing our cutting-edge website equipped with a powerful machine learning algorithm, designed to safeguard you from potential cyber threats in real-time. We are proud to present a revolutionary solution that detects malicious websites by analyzing multiple features, providing you with an unparalleled layer of protection in your online browsing experience.</p>
+          <p> our website represents a significant leap forward in the battle against cybercrime. With its real-time analysis and precise detection capabilities, you can navigate the vast online landscape with peace of mind, knowing that your security is in safe hands. </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="content ps-0 ps-lg-5">
+            <p class="fst-italic">
+              Opening malicious websites can lead to various harmful consequences, as these sites are designed to exploit vulnerabilities in your web browser, operating system, or even your online behavior. Here are some potential consequences of opening malicious websites:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>  Malicious websites may attempt to download and install malware on your device without your knowledge. </li>
+              <li><i class="bi bi-check-circle-fill"></i> Some malicious websites are designed to mimic legitimate websites, such as banking or social media sites, to trick you into entering your login credentials or personal information. </li>
+              <li><i class="bi bi-check-circle-fill"></i>Certain malicious websites can exploit vulnerabilities in your browser or plugins to automatically download malware onto your device without any interaction or consent from you.</li>
+            </ul>
+
+            <div class="position-relative mt-4">
+              <img src="https://blog.verisign.com/wp-content/uploads/2016/09/ts_162675770-1024x768.jpg" class="img-fluid rounded-4" alt="">
+              <a href="https://youtu.be/gGNS-kO8qQ0" class="glightbox play-btn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+
+  
+       <!-- ======= Our Team Section ======= -->
+       <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Our Team</h2>
+            
+          </div>
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="static/images/team-1.jpg" class="img-fluid" alt="">
+                <h4>Smriti Rupam</h4>
+                <span>Machine Learning & Deployment</span>
+                <div class="social">
+                  <a href=""><i class="fa-brands fa-twitter" style="color: #15459e;"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook" style="color: #3b71ce;"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a64e8f;"></i></a>
+                  <a href="https://www.linkedin.com/in/smriti-rupam-8109361b2/"><i class="fa-brands fa-linkedin" style="color: #1f3251;"></i></a>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <img src="static/images/team-2.jpg" class="img-fluid" alt="">
+                <h4>Pappu Prasad</h4>
+                <span>Machine Learning & Deployment</span>
+                <div class="social">
+                  <a href=""><i class="fa-brands fa-twitter" style="color: #15459e;"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook" style="color: #3b71ce;"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a64e8f;"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin" style="color: #1f3251;"></i></a>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="member">
+                <img src="https://media.licdn.com/dms/image/D5603AQHs5fXXi0oLGA/profile-displayphoto-shrink_800_800/0/1683900865955?e=1696464000&v=beta&t=ElPvlYxNcOxT1XCsUictWDuk7nCH7jod82Pco8ryCj0" class="img-fluid" alt="">
+                <h4>Abhishek Kumar</h4>
+                <span>Web Development</span>
+                <div class="social">
+                  <a href=""><i class="fa-brands fa-twitter" style="color: #15459e;"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook" style="color: #3b71ce;"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a64e8f;"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin" style="color: #1f3251;"></i></a>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="member">
+                <img src="static/images/team-4.jpg" class="img-fluid" alt="">
+                <h4>Shivani Priya</h4>
+                <span>Flask</span>
+                <div class="social">
+                  <a href=""><i class="fa-brands fa-twitter" style="color: #15459e;"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook" style="color: #3b71ce;"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a64e8f;"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin" style="color: #1f3251;"></i></a>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Our Team Section -->
+</section>
+
+<div class="section-header" style="padding-left: 100px; margin-top: 20px;">
+  <h2>Our Mentor</h2>
+</div>
+<div class="container mt-4">
+  <div class="row" style="padding-top: 0px;">
+    <div class="col-md-4" style="padding-left: 20px;">
+      <!-- Image (adjust 'img-src' with the actual image path) -->
+      <img src="static/images/mentor.jpg"  width="250" height="200">
+    </div>
+    <div class="col-md-8">
+      <!-- Text Content -->
+      <h3>Professor Priyanka Sinha (HOD Of CSE NCE, Chandi)</h3>
+      <p>
+        Throughout the journey of our project, Ma'am has been an unwavering source of inspiration and guidance, fueling our team with boundless creativity and enthusiasm. From the very inception of the idea, she shared her invaluable insights, igniting the spark that set our project in motion.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<section id="ContactUs">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Contact Us</h2>
+          </div>
+  
+          <div class="row gx-lg-0 gy-4">
+  
+            <div class="col-lg-4">
+  
+              <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                <div class="info-item d-flex">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <h4>Location:</h4>
+                    <p>Nalanda College of Engineering, Chandi</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p>malurltracer@gmail.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <h4>Call:</h4>
+                    <p>+91 7463812653</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="fa-regular fa-clock"></i>
+                  <div>
+                    <h4>Open Hours:</h4>
+                    <p>Mon-Sat: 9AM- 5PM</p>
+                  </div>
+                </div><!-- End Info Item -->
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-8">
+              <form method="" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                </div>
+                <div class="text-center" style="margin-top: 40px;"><button type="submit">Send Message</button></div>
+              </form>
+            </div><!-- End Contact Form -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+</section>
+
+
+<!-- Footer -->
+<section id="footer">
+  <div class="container">
+      <h1><b>MalURLTracer™</b></h1>
+      <div class="row text-center text-xs-center text-sm-left text-md-left ">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+              <h3><a href="#About_Us" style="text-decoration: none; color: black;">ABOUT MalURLTracer</a></h3>
+              
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+              <h3><a href="#Blogs" style="text-decoration: none; color: black;"> KNOW MORE </a></h3>
+              
+          </div>
+          
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa-brands fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+          </div>
+          <hr>
+      </div>  
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black">
+              <p> Copyrights reserved by @MalURLTracer™. 2023 © MalURLTracer™ Ltd. All rights reserved.</p>
+          </div>
+          <hr>
+      </div>  
+  </div>
+</section>
+
+ <!-- JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+ integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+ integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+ crossorigin="anonymous"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.2/jquery.flexslider.js"></script>
+
+
+
+
+<script>
+ 
+     let x = '{{xx}}';
+     let num = x*100;
+     if (0<=x && x<0.50){
+         num = 100-num;
+     }
+     let txtx = num.toString();
+     if(x<=1 && x>=0.50){
+         var label = "Website is "+txtx +"% safe to use...";
+         document.getElementById("prediction").innerHTML = label;
+         document.getElementById("button1").style.display="block";
+     }
+     else if (0<=x && x<0.50){
+         var label = "Website is "+txtx +"% unsafe to use..."
+         document.getElementById("prediction").innerHTML = label ;
+         document.getElementById("button2").style.display="block";
+     }
+ 
+     $(document).ready(function (){
+  if (jQuery().flexslider) {
+  //flexslider ticker
+  $('.flexslider-ticker').each(function() {
+    var tickerSettings =  {
+      animation: "slide",
+      animationLoop: false,
+      selector: ".items > .item",
+      move: 1,
+      controlNav: false,
+      slideshow: true,
+      direction: 'vertical'
+    };
+    $(this).flexslider(tickerSettings);
+  });
+  // flexsliders
+  $('.flexslider').each(function() {
+    var sliderSettings =  {
+      animation: $(this).attr('data-transition'),
+      selector: ".slides > .slide",
+      controlNav: false,
+      smoothHeight: true,
+      prevText: "",
+      nextText: "",
+      sync: $(this).data('slidernav') || '',
+      start: function(slider) {
+        if (slider.find('[data-slide-bg-stretch=true]').length > 0) {
+          slider.find('[data-slide-bg-stretch=true]').each(function() {
+            if ($(this).data('slide-bg')) {
+              $(this).backstretch($(this).data('slide-bg'));
+              // $(this).data('slide-bg');
+            }
+          });
+        }
+      }
+    };
+      
+    $('html').addClass('has-flexslider');
+    $(this).flexslider(sliderSettings);
+  });
+  $(window).delay(1000).trigger('resize'); //make sure height is right load assets loaded
+}})
+  
+   
+</script>
+</body>
+</html>
